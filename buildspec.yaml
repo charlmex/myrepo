@@ -3,6 +3,9 @@ version: 0.2
 phases:
   install:
     commands:
+      - echo "Checking environment..."
+      - echo $PATH
+      - which apt-get
       - echo "Installing NGINX"
       - apt-get update && apt-get install nginx -y
 
